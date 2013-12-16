@@ -9,8 +9,10 @@ class report_mega_new extends moodleform {
 
         $categorys  = $DB->get_records_menu('course_categories',array('parent'=>0));
         asort($categorys);
-
-        $categorys = array_merge(array(0=>get_string('pick','report_mega')), $categorys);
+        $dato =array(0=>get_string('pick','report_mega'));
+        
+        $categorys =  ($dato + $categorys);
+        //$categorys = array_merge(array(0=>get_string('pick','report_mega')), $categorys);
 
         $types = array(get_string('pick','report_mega'),get_string('coursecat','report_mega'),get_string('exam','report_mega'),get_string('scorm','report_mega'));
 
