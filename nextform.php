@@ -20,7 +20,7 @@ if(isset($_POST['cat'])){
 		echo html_writer::tag('label',get_string('category'),array('for'=>'cat-'.$cat));
 		echo html_writer::start_tag('select',array('name'=>'category','id'=>'cat-'.$cat, 'class'=>'selectanid', 'rel'=>'.wrapcat'.$cat));
 
-			echo html_writer::tag('option',get_string('pick'),array('value'=>'0'));
+			echo html_writer::tag('option',get_string('pick','report_mega'),array('value'=>'0'));
 
 			foreach($categories as $k => $v){
 				echo html_writer::tag('option',$v,array('value'=>$k));
