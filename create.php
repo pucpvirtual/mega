@@ -64,9 +64,9 @@ if(isset($_POST) && count($_POST) > 0){
 
     $blink = new moodle_url('/report/mega/index.php');
 
-    echo html_writer::tag('div',get_string('goodsave','report_mega'));
+    echo html_writer::tag('div',get_string('goodsave','report_mega'),array('class'=>'exit-save'));
 
-    echo html_writer::tag('a',get_string('goback','report_mega'),array('href'=>$blink));
+    echo html_writer::tag('a',get_string('goback','report_mega'),array('href'=>$blink,'class'=>'exit-link-save'));
 
 }else{
     $mform->display();
