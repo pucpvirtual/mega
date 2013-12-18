@@ -1,0 +1,76 @@
+/*Front*/
+.path-report-mega{
+}
+
+.path-report-mega .fitem{
+	padding: 10px;
+}
+
+.path-report-mega label{
+	display: block;
+	width: 190px;
+	float: left;
+	text-align: right;
+	margin-right: 40px;
+}
+.path-report-mega select{
+	padding: 3px;
+	margin-bottom: 10px;
+}
+
+.path-report-mega .wrapcat2{
+	margin-top: 10px;
+}
+.path-report-mega .wrapdata{
+	margin-top: 10px;
+}
+.path-report-mega .wapcontentcourse{
+	color: red;
+	text-align: center;
+}
+.path-report-mega .fitem_actionbuttons{
+	text-align: center;
+}
+.path-report-mega .fitem_actionbuttons input{
+	padding: 5px 10px;
+}
+.path-report-mega .fitem_actionbuttons .fsubmit{
+	text-align: center;
+	margin-left: 0!important;
+	width: 100%!important;
+}
+
+/*Guardado Correctamente*/
+.path-report-mega .exit-save{
+	text-align: center;
+	color: #666;
+	font-size: 20px;
+}
+
+.path-report-mega .exit-link-save{
+	text-align: center;
+	display: block;
+	margin: 15px 0;
+}
+
+/*Crear nuevo reporte*/
+
+.path-report-mega #create-new-report{
+	text-align: center;
+}
+
+.path-report-mega table{
+	margin: 15px auto;
+}
+
+.path-report-mega table thead#header-table{
+	background-color: #ededed;
+	border-bottom: 1px solid #ccc;
+}
+
+.path-report-mega table tr{
+	border-bottom: 1px solid #ccc;
+}
+.path-report-mega table tr td{
+	padding: 10px;
+}
