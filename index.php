@@ -30,16 +30,18 @@ echo $OUTPUT->header();
 
 		echo html_writer::start_tag('div');
 
-			echo html_writer::start_tag('div');
-				echo html_writer::tag('a',get_string('newreport','report_mega'),array('href'=>$link));
+			echo html_writer::start_tag('div', array('id'=>'create-new-report'));
+				echo html_writer::tag('a',get_string('newreport','report_mega'),array('href'=>$link, 'class'=>'create-new-report'));
 			echo html_writer::end_tag('div');
 
 			echo html_writer::start_tag('table');
+			echo html_writer::start_tag('thead', array('id'=>'header-table'));
 				echo html_writer::start_tag('tr');
 					echo html_writer::tag('td',get_string('reportname','report_mega'));
 					echo html_writer::tag('td',get_string('reportstate','report_mega'));
 					echo html_writer::tag('td','',array('colspan'=>'2'));
 				echo html_writer::end_tag('tr');
+				echo html_writer::end_tag('thead');
 
 		foreach($reports as $r){
 
